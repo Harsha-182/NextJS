@@ -1,7 +1,7 @@
 import Link from "next/link"
 
 const ProductList = () => {
-	let productId = 100;
+	const productId = 100;
 	return(
 		<div>
 			<Link href='/home'>Home</Link>

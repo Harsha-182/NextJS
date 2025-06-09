@@ -18,13 +18,16 @@ export default function AuthLayout({
 
   return (
     <div>
-		{navLinks.map(link => {
-			let isActive = pathname === link.href || 
-			pathname.startsWith(link.href) && link.href !== "/";
-			return (
-				<Link className={isActive ? 'font-bold mr-4': 'text-blue-500 mr-4'} href={link.href} key={link.name}>{link.name}</Link>
-			)
-		})}
+		<nav className="mb-4">
+			{navLinks.map(link => {
+				const isActive = pathname === link.href || 
+				pathname.startsWith(link.href) && link.href !== "/";
+				return (
+					<Link className={isActive ? 'font-bold mr-4': 'text-blue-500 mr-4'} href={link.href} key={link.name}>{link.name}</Link>
+				)
+			})}
+		</nav>
+		<div>{children}</div>
 	</div>
   )
 }

@@ -8,4 +8,4 @@ const CounterPage = () => {
 	return <Counter/>
 }
 
-export default Counter;
+export default CounterPage;
