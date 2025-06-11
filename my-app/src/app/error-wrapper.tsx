@@ -38,7 +38,7 @@ const ErrorWrapper = ({children}: WrapperProps) => {
 					message='Simulated error in root layouot'
 				/>
 			</div> */}
-			<div>{children}</div>;
+			<div>{children}</div>
 		</div>
 	)
 }
